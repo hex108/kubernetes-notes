@@ -1,0 +1,8 @@
+# 参数调优
+
+## Scheduler参数
+
+* [percentageOfNodesToScore](https://kubernetes.io/docs/concepts/configuration/scheduler-perf-tuning/#percentage-of-nodes-to-score)
+
+  Scheduler为pod分配kubelet节点的过程可以分为两个阶段：predicates（筛选出满足pod各种硬性条件，如：资源大小）和priorities（给通过pridicates选出的节点打分，选出最优的节点）。对于大集群（1000+）来说，preidcates和pritories这两个过程可能消耗很长时间，为了提高调度性能，我们可以不必选所有满足条件的节点，通过`percentageOfNodesToScore`设置predicates需要选出的节点数，这样就节省了时间。缺点是：这样可能导致调度结果不是全局最优的，但一般没什么问题。
+
