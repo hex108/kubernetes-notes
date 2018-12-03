@@ -21,4 +21,5 @@ writes them to the user space program.
 * IP over UDP tunnel with socat: https://www.gabriel.urdhr.fr/2016/01/12/ip-over-udp-with-socat/
 * Foo over UDP: https://lwn.net/Articles/614348/
 * Vxlan内核文档：https://www.kernel.org/doc/Documentation/networking/vxlan.txt
+* VXLAN Series: https://blogs.vmware.com/vsphere/2013/04/vxlan-series-different-components-part-1.html
 * Multi-Host Networking Overlay with Flannel: https://docker-k8s-lab.readthedocs.io/en/latest/docker/docker-flannel.html（这网站里有很多docker网络相关的动手小实验）

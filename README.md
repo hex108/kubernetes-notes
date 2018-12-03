@@ -1,6 +1,8 @@
 # [Kubernetes Notes](https://hex108.gitbook.io/kubernetes-notes/)
 
-* [搭建本地开发测试环境](build-develop-env.md)
+* 搭建开发环境
+  * [搭建本地开发测试环境](install-kubernetes/install-local-k8s.md)
+  * 搭建多机开发测试环境
 * 容器运行时(Container Runtime)
   * CRI
   * Docker
@@ -21,9 +23,10 @@
   * CNI
   * Flannel
   * Calico
-
 * Service Mesh
   * Istio
+* 神奇的Kubernetes特性
+  * [Admission controller](amazing-features/admission-controller.md)
 * 扩展Kubernetes
   * [CustomResourceDefinition(CRD)](extending-kubernetes/crd.md)
   * [Scheduler extender](extending-kubernetes/scheduler_extender.md)
