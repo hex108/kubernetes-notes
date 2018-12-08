@@ -11,8 +11,8 @@
   - 基础知识
     - Cgroup
     - [Namespaces](resource-isolation/namespace.md)
-  - CPU
-  - Memory
+  - [CPU](resource-isolation/cpu.md)
+  - [Memory](resource-isolation/memory.md)
   - 网络出/入带宽
   - 磁盘空间
   - 磁盘IO
