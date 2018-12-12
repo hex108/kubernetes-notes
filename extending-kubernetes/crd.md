@@ -1,6 +1,40 @@
 # 使用CustomResourceDefinition(CRD)扩展Kubernetes
 
-## 自动化工具
+## 1. 简介
+
+* CRD简单的例子
+
+  https://kubernetes.io/docs/tasks/access-kubernetes-api/extend-api-custom-resource-definitions/
+
+* 写一个controller处理CRD
+
+  https://github.com/kubernetes/sample-controller
+
+  sample-controller: 放在go/src/k8s.io目录下
+
+  https://github.com/kubernetes/community/blob/master/contributors/devel/controllers.md
+
+* 关于subresource(status/scale)及category
+
+  https://blog.openshift.com/kubernetes-custom-resources-grow-up-in-v1-10/
+
+  如果想生成UpdateStatus/UpdateScale/..之类的方法，需要在CRD数据结构上加上一些tag：
+
+  ```
+  Similar to how an UpdateStatus() method exists for the status subresource, we can generate the GetScale() and UpdateScale() methods for the scale subresource by adding the following tags on the Database type.
+  ```
+
+  使用`scale` subresource可以很方便地实现自动扩缩容。
+
+## 2. 实现
+
+- ETCD存储
+
+  CRD存储在etcd上的路径与deployment、pod等核心资源的存储位置不一样，它的路径为：`root / resource.Group + "/" + resource.Resource`（见`staging/src/k8s.io/apiextensions-apiserver/pkg/apisever/customresource_handler.go`#574，注：在project里搜索“ResourcePrefix”可以搜到其他resource的存储路径）。
+
+  注： tapp为/registry/gaia/tapps/default/example-tapp。为了平滑升级，兼容以前的版本，我们需要修改tapp的存储路径。
+
+## 3. 自动化工具
 
 * [Kubebuilder](https://github.com/kubernetes-sigs/kubebuilder)
 
@@ -16,12 +50,12 @@
 
   This project is a component of the [Operator Framework](https://github.com/operator-framework), an open source toolkit to manage Kubernetes native applications, called Operators, in an effective, automated, and scalable way.
 
-## 一些有趣的CRD/Operator
+## 4. 一些有趣的CRD/Operator
 
 Awesome Operators in the Wild: https://github.com/operator-framework/awesome-operators
 
 
-## 参考资料
+## 5. 参考资料
 
 * Extend the Kubernetes API with CustomResourceDefinitions: https://kubernetes.io/docs/tasks/access-kubernetes-api/custom-resources/custom-resource-definitions/
 

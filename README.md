@@ -9,13 +9,12 @@
   * Containerd
 * 资源隔离与限制
   - 基础知识
-    - Cgroup
+    - [Cgroup](resource-isolation/cgroup.md)
     - [Namespaces](resource-isolation/namespace.md)
   - [CPU](resource-isolation/cpu.md)
   - [Memory](resource-isolation/memory.md)
   - 网络出/入带宽
-  - 磁盘空间
-  - 磁盘IO
+  - [Container](resource-isolation/container.md)
 * 网络
   * 基础知识
     * [Iptables](network/iptables.md)
