@@ -27,25 +27,25 @@ When VXLAN was first implemented in Linux 3.7, the UDP port to use was not def
 分别在node0和node1创建点对点的vxlan设备（VTEP）
 
 ```no
-root@node0# ip link add vxlan0 type vxlan \
+root@node0:~# ip link add vxlan0 type vxlan \
     id 42 \
     dstport 4789 \
     remote 192.168.8.101 \
     local 192.168.8.100 \
     dev enp0s8
-root@node0# ip addr add 10.20.1.2/24 dev vxlan0
-root@node0# ip link set vxlan0 up
+root@node0:~# ip addr add 10.20.1.2/24 dev vxlan0
+root@node0:~# ip link set vxlan0 up
 ```
 
 ```
-root@node1# ip link add vxlan0 type vxlan \
+root@node1:~# ip link add vxlan0 type vxlan \
     id 42 \
     dstport 4789 \
     remote 192.168.8.100 \
     local 192.168.8.101 \
     dev enp0s8 
-root@node1# ip addr add 10.20.1.3/24 dev vxlan0
-root@node1# ip link set vxlan0 up
+root@node1:~# ip addr add 10.20.1.3/24 dev vxlan0
+root@node1:~# ip link set vxlan0 up
 ```
 
 enp0s8为local后面那个ip所对应的网卡？想知道enp0s8为什么这么命名，可以看看[Understanding systemd’s predictable network device names](https://major.io/2015/08/21/understanding-systemds-predictable-network-device-names/)。
@@ -86,18 +86,36 @@ IP 10.20.1.2 > 10.20.1.3: ICMP echo request, id 2098, seq 1, length 64
 分别在node0、node1、node2创建多播的vxlan设备（VTEP）
 
 ```
-root@node0# ip link add vxlan0 type vxlan \
+root@node0:~# ip link add vxlan0 type vxlan \
     id 42 \
     dstport 4789 \
     group 239.1.1.1 \
     dev enp0s8 
-root@node0# ip addr add 10.20.1.2/24 dev vxlan0
-root@node0# ip link set vxlan0 up
+root@node0:~# ip addr add 10.20.1.2/24 dev vxlan0
+root@node0:~# ip link set vxlan0 up
 ```
 
 在node1和node2上执行类似的命令，将第二条中的`ip addr add`里的ip地址改为`10.20.1.3/24`(node2)和`10.20.1.4/24`。
 
 现在我们可以在node0上ping 10.20.1.3和10.20.1.4这两个ip了。
+
+#### 多播模式下接入docker container
+
+![multicast-vlan-with-containers](https://ws2.sinaimg.cn/large/006tKfTcgy1fjy5517ktoj31hc0u0n39.jpg)
+
+分别在node0、node1、node2下创建多播vxlan设备，同时vxlan与bridge docker0相连。
+
+```
+# node0
+root@node0:~# /vagrant/config_docker0.sh 192.168.0.1/24
+root@node0:~# ip link add vxlan0 type vxlan \
+    id 42 \
+    dstport 4789 \
+    group 239.1.1.1 \
+    dev enp0s8
+root@node0:~# ip link set vxlan0 master docker0
+root@node0:~# ip link set vxlan0 up
+```
 
 ### 2.3 ToAdd 
 

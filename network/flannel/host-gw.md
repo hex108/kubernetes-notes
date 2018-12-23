@@ -71,7 +71,6 @@ root@node0:~# /vagrant/config_docker0_with_flannel.sh
 ## 4. 参考资料
 
 * flannel host-gw模式工作原理浅析: https://blog.csdn.net/cloudvtech/article/details/79809569
-* flannel host-gw network: http://hustcat.github.io/flannel-host-gw-network/
 * Routing table: https://en.wikipedia.org/wiki/Routing_table
 * What is kernel ip forwarding: https://unix.stackexchange.com/questions/14056/what-is-kernel-ip-forwarding
 * Setting Up Gateway Using iptables and route on Linux: https://www.systutorials.com/1372/setting-up-gateway-using-iptables-and-route-on-linux/

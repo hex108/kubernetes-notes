@@ -21,10 +21,10 @@
     * [Linux network interfaces](network/linux-network-interfaces.md)
     * [Iptables](network/iptables.md)
     * [Overlay network](network/overlay-network.md)
-    * [Vxlan](network/vxlan.md)
   * CNI
   * Flannel
     * [host-gw](network/flannel/host-gw.md)
+    * [vxlan](network/flannel/vxlan.md)
   * Calico
 * Service Mesh
   * Istio
