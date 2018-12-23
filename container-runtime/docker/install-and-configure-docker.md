@@ -2,9 +2,9 @@
 
 ## 1. 安装Docker
 
-所有版本的安装文档在https://docs.docker.com/install/都可以找到。
+所有版本的安装文档在[https://docs.docker.com/install/](https://docs.docker.com/install/)都可以找到。
 
-以在ubuntu上安装docker为例：https://docs.docker.com/install/linux/docker-ce/ubuntu/，只需要执行两步即可安装成功：
+以在ubuntu上安装docker为例：[https://docs.docker.com/install/linux/docker-ce/ubuntu/](https://docs.docker.com/install/linux/docker-ce/ubuntu/)，只需要执行两步即可安装成功：
 
 ```
 $ curl -fsSL https://get.docker.com -o get-docker.sh
@@ -27,7 +27,7 @@ Docker daemon默认使用brdige docker0，它创建的bridge模式的container�
 
 ```
 {
-  "bridge": "YOUR-BRIDGE"
+  "bridge": "YOUR-BRIDGE"  // e.g. "brdige": "192.168.1.1/24"
 }
 ```
 

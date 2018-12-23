@@ -1,0 +1,27 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.box = "ubuntu/xenial64"
+
+  config.vm.define "node0" do |node0|
+	node0.vm.provision :shell, inline: "hostname node0"
+  end
+
+  config.vm.define "node1" do |node1|
+	node1.vm.provision :shell, inline: "hostname node1"
+  end
+
+  config.vm.define "node2" do |node2|
+	node2.vm.provision :shell, inline: "hostname node2"
+  end
+
+  config.vm.provision "shell", inline: <<-SHELL
+     echo "sudo su -" >> .bashrc
+  SHELL
+
+  #config.vm.provision "shell", inline: "sudo su -"
+  config.vm.provision :shell, path: "setup.sh"
+
+  config.vm.network "private_network", type: "dhcp"
+end

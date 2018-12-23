@@ -24,6 +24,7 @@
     * [Vxlan](network/vxlan.md)
   * CNI
   * Flannel
+    * [host-gw](network/flannel/host-gw.md)
   * Calico
 * Service Mesh
   * Istio
