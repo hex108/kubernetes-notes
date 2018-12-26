@@ -25,6 +25,7 @@
   * Flannel
     * [host-gw](network/flannel/host-gw.md)
     * [vxlan](network/flannel/vxlan.md)
+    * [ipip](network/flannel/ipip.md)
   * Calico
 * Service Mesh
   * Istio
@@ -41,4 +42,6 @@
   * [Docker](bugs-in-production/docker.md)
 * [各组件推荐参数配置](components_configure.md)
 * [各大公司生产环境实践](usecases-in-production.md)
+* [社区贡献](how-to-contribute.md)
+* [学习资料](learning-materials.md)
 

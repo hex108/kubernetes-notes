@@ -47,5 +47,6 @@ fixed-cidr必须与bridge在同一个网段（因此要求bridge必须要有ip�
 
 ## 3. 参考资料
 
+* Configure and troubleshoot the Docker daemon: https://docs.docker.com/config/daemon/
 * Build your own bridge: https://docs.docker.com/v17.09/engine/userguide/networking/default_network/build-bridges/
 * Customize the docker0 bridge: https://docs.docker.com/v17.09/engine/userguide/networking/default_network/custom-docker0/
