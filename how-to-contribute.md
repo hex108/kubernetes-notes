@@ -16,7 +16,7 @@ https://github.com/kubernetes/community/blob/master/contributors/guide/pull-requ
 
 ## 3. 贡献状态
 
-从http://stackalytics.com/?project_type=kubernetes-group&metric=commits&release=all可以看到各公司/个人对kubernetes的贡献，比如：Tencent为http://stackalytics.com/?project_type=kubernetes-group&metric=commits&release=all&company=tencent。
+从[stackalytics.com](http://stackalytics.com/?project_type=kubernetes-group&metric=commits&release=all)可以看到各公司/个人对kubernetes的贡献，比如：Tencent为http://stackalytics.com/?project_type=kubernetes-group&metric=commits&release=all&company=tencent。
 
 ## 4. 参考资料
 
