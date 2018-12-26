@@ -23,6 +23,7 @@
     * [Overlay network](network/overlay-network.md)
   * CNI
   * Flannel
+    * [Flannel原理](network/flannel/flannel.md)
     * [host-gw](network/flannel/host-gw.md)
     * [vxlan](network/flannel/vxlan.md)
     * [ipip](network/flannel/ipip.md)
