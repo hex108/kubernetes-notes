@@ -3,6 +3,11 @@
 * 搭建开发环境
   * [搭建本地开发测试环境](install-kubernetes/install-local-k8s.md)
   * 搭建多机开发测试环境
+* 基本概念
+  * 认证鉴权
+    * [理解证书](basic-concepts/authentication-authorization/certificate.md)
+    * [Kubelet配置](basic-concepts/authentication-authorization/kubelet.md)
+  * [垃圾回收](basic-concepts/garbage-collection.md)
 * 容器运行时(Container Runtime)
   * CRI
   * Docker
