@@ -18,3 +18,4 @@ Kubelet支持X509证书认证和API bearer token认证，我们暂且只配置X5
 * Kubelet authentication/authorization: https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet-authentication-authorization/
 * Master-Node communication: https://kubernetes.io/docs/concepts/architecture/master-node-communication/
 * TLS bootstrapping: https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet-tls-bootstrapping/
+* Kubernetes Security Best-Practices: https://dev.to/petermbenjamin/kubernetes-security-best-practices-hlk#network-policies

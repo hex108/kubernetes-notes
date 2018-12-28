@@ -28,58 +28,53 @@ A想要与B通信，A如何向B证明"我就是A"，B如何向A证明"我就是B
 
 ## 4. Kubernetes相关的证书
 
-- Certificates: https://kubernetes.io/docs/concepts/cluster-administration/certificates/
-
 - Kubernetes里用到的证书相关的参数
 
   https://github.com/kubernetes/kubernetes/issues/54665#issuecomment-340960398
 
-  - apiserver-builder: Serving Certificates, Authentication, and Authorization
+  https://github.com/kubernetes-incubator/apiserver-builder/blob/master/docs/concepts/auth.md
 
-    https://github.com/kubernetes-incubator/apiserver-builder/blob/master/docs/concepts/auth.md
+- How Kubernetes certificate authorities work
 
-- 好的文章
-
-  - How Kubernetes certificate authorities work
-
-    https://www.hnwatcher.com/r/5640735/How-Kubernetes-certificate-authorities-work
+  https://www.hnwatcher.com/r/5640735/How-Kubernetes-certificate-authorities-work
 
 - 生成kubernetes证书
+
+  Certificates: https://kubernetes.io/docs/concepts/cluster-administration/certificates/
 
   Provisioning a CA and Generating TLS Certificates: https://github.com/kelseyhightower/kubernetes-the-hard-way/blob/master/docs/04-certificate-authority.md
 
   Generating Kubernetes Configuration Files for Authentication: https://github.com/kelseyhightower/kubernetes-the-hard-way/blob/master/docs/05-kubernetes-configuration-files.md
 
-* HPA证书相关
+* HPA证书相关参数
 
-  https://kubernetes.io/docs/tasks/access-kubernetes-api/configure-aggregation-layer/#enable-apiserver-flags
-
-  https://github.com/kubernetes-incubator/metrics-server/issues/35 
+  https://kubernetes.io/docs/tasks/access-kubernetes-api/configure-aggregation-layer/#enable-apiserver-flags 
 
 ## 5. 参考资料
 
 * Public-key cryptography: https://en.wikipedia.org/wiki/Public-key_cryptography
+
 * CA(Certificate authority): https://en.wikipedia.org/wiki/Certificate_authority
 
-- CSR(Certificate Signing Request)
+* CSR(Certificate Signing Request)
 
   https://www.sslshopper.com/what-is-a-csr-certificate-signing-request.html
 
   https://en.wikipedia.org/wiki/Certificate_signing_request
 
-- PKI(Public key infrastructure)
+* PKI(Public key infrastructure)
 
   https://en.wikipedia.org/wiki/Public_key_infrastructure
 
-- Public key certificate
+* Public key certificate
 
   https://en.wikipedia.org/wiki/Public_key_certificate
 
-- PEM(Privacy-enhanced Electronic Mail)
+* PEM(Privacy-enhanced Electronic Mail)
 
   https://en.wikipedia.org/wiki/Privacy-enhanced_Electronic_Mail
 
-- TLS(Transport Layer Security)
+* TLS(Transport Layer Security)
 
   - Wiki: https://en.wikipedia.org/wiki/Transport_Layer_Security
   - RFC5246: https://tools.ietf.org/html/rfc5246
