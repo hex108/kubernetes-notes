@@ -17,4 +17,6 @@
 
 * Linux Advanced Routing & Traffic Control HOWTO: http://www.tldp.org/HOWTO/Adv-Routing-HOWTO/, https://www.tldp.org/HOWTO/pdf/Adv-Routing-HOWTO.pdf
 
-  A very hands-on approach to iproute2, traffic shaping and a bit of netfilter. 
+  A very hands-on approach to iproute2, traffic shaping and a bit of netfilter.
+
+* Container Networking: From Docker to Kubernetes: https://www.nginx.com/resources/library/container-networking-docker-kubernetes/

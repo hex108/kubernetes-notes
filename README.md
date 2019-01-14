@@ -9,7 +9,7 @@
     * [Kubelet配置](basic-concepts/authentication-authorization/kubelet.md)
   * [垃圾回收](basic-concepts/garbage-collection.md)
 * 容器运行时(Container Runtime)
-  * CRI
+  * [CRI](container-runtime/cri.md)
   * Docker
     * [安装配置Docker](container-runtime/docker/install-and-configure-docker.md)
   * Containerd
@@ -26,13 +26,14 @@
     * [Linux network interfaces](network/linux-network-interfaces.md)
     * [Iptables](network/iptables.md)
     * [Overlay network](network/overlay-network.md)
-  * CNI
+  * [CNI](network/cni.md)
   * Flannel
     * [Flannel原理](network/flannel/flannel.md)
     * [host-gw](network/flannel/host-gw.md)
     * [vxlan](network/flannel/vxlan.md)
     * [ipip](network/flannel/ipip.md)
   * Calico
+  * Cilium
 * Service Mesh
   * Istio
 * 神奇的Kubernetes特性
