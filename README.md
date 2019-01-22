@@ -4,6 +4,8 @@
   * [搭建本地开发测试环境](install-kubernetes/install-local-k8s.md)
   * 搭建多机开发测试环境
 * 基本概念
+  * Workloads
+    * [StatefulSet](basic-concepts/workloads/statefulset.md)
   * 认证鉴权
     * [理解证书](basic-concepts/authentication-authorization/certificate.md)
     * [Kubelet配置](basic-concepts/authentication-authorization/kubelet.md)

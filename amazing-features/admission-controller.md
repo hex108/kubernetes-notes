@@ -38,7 +38,7 @@ This admission controller defaults and limits what node selectors may be used wi
 
   `kubectl patch namespace NAMESPACE_XXX -p '{"metadata":{"annotations":{"scheduler.alpha.kubernetes.io/node-selector":"dedicatedNode=NAMESPACE_XXX"}}}'`，例：`kubectl patch namespace demo -p '{"metadata":{"annotations":{"scheduler.alpha.kubernetes.io/node-selector":"dedicatedNode=demo"}}}'`，namespace demo下的pod将会被自动加上nodeSelector `dedicatedNode=demo`
 
-##参考资料
+## 参考资料
 
 * Using Admission Controllers: https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/
 * Understanding and using the Kubernetes PodNodeSelector Admission Controller: https://www.mgasch.com/post/podnodesel/
