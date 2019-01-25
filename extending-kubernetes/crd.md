@@ -26,6 +26,20 @@
 
   使用`scale` subresource可以很方便地实现自动扩缩容。
 
+* [CRD validation](https://kubernetes.io/docs/tasks/access-kubernetes-api/custom-resources/custom-resource-definitions/#validation)
+
+  可以通过 [OpenAPI v3 schema](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.0.md#schemaObject)对custom resource(CR)进行校验，否则如果用户创建的CR包含有不合规则的字段，就会导致CRD相应的controller没法正常工作，比如：不能正常list这些CR（解析时会出错）。
+
+  如果CRD里要校验的字段太多，可以考虑下面两种方式：
+
+  * 使用[validatingadmissionwebhook](https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/#validatingadmissionwebhook)进行校验
+
+  * 利用工具自动生成OpenAPI schema
+
+    https://github.com/ant31/crd-validation
+
+    官方也有相应的issue追踪https://github.com/kubernetes/kubernetes/issues/62323，但还没没完成。
+
 ## 2. 实现
 
 - ETCD存储
