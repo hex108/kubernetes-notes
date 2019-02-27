@@ -42,7 +42,8 @@
   * [Admission controller](amazing-features/admission-controller.md)
 * 扩展Kubernetes
   * [CustomResourceDefinition(CRD)](extending-kubernetes/crd.md)
-  * [Scheduler extender](extending-kubernetes/scheduler_extender.md)
+  * [Scheduler extender](extending-kubernetes/scheduler-extender.md)
+  * [扩展资源维度](extending-kubernetes/extending-resource.md)
 * 性能调优
   * [参数调优](performance-tunning/parameters-tunning.md)
 * 现网问题
