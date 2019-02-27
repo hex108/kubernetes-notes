@@ -13,6 +13,10 @@
 - https://jimmysong.io/kubernetes-handbook/
 - Kubernetes The Hard Way: https://github.com/kelseyhightower/kubernetes-the-hard-way
 
+  文章
+
+* [Scalability good practices for Kubernetes contributors](https://docs.google.com/document/d/190lWs3SeU4lCnNtscErlCtFgISNlbvDlu5OeISOLKo0/edit?ts=592c1efe#heading=h.ie92xnlbptq2)
+
 ## 网络
 
 * Linux Advanced Routing & Traffic Control HOWTO: http://www.tldp.org/HOWTO/Adv-Routing-HOWTO/, https://www.tldp.org/HOWTO/pdf/Adv-Routing-HOWTO.pdf
