@@ -14,6 +14,7 @@
   * [CRI](container-runtime/cri.md)
   * Docker
     * [安装配置Docker](container-runtime/docker/install-and-configure-docker.md)
+    * [Docker FAQ](container-runtime/docker/docker-faq.md)
   * Containerd
 * 资源隔离与限制
   - 基础知识
