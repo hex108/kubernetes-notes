@@ -1,19 +1,19 @@
 # Admission controller
 
-## PodPreset
+## 1. PodPreset
 
 修改pod神器。
 
 - Inject Information into Pods Using a PodPreset: https://kubernetes.io/docs/tasks/inject-data-application/podpreset/
 - PodPreset design proposal: https://github.com/kubernetes/community/blob/master/contributors/design-proposals/service-catalog/pod-preset.md
 
-## MutatingAdmissionWebhook
+## 2. MutatingAdmissionWebhook
 
 Diving into Kubernetes MutatingAdmissionWebhook: https://medium.com/ibm-cloud/diving-into-kubernetes-mutatingadmissionwebhook-6ef3c5695f74
 
-可以根据需要自主地（要自己写webhook）修改pod。
+可以根据需要自主地（要自己写webhook）修改pod。通过框架[kubewebhook](https://github.com/slok/kubewebhook)可以很方便地写一个webhook。
 
-## PodNodeSelector
+## 3. PodNodeSelector
 
 ```
 This admission controller defaults and limits what node selectors may be used within a namespace by reading a namespace annotation and a global configuration.
@@ -38,7 +38,7 @@ This admission controller defaults and limits what node selectors may be used wi
 
   `kubectl patch namespace NAMESPACE_XXX -p '{"metadata":{"annotations":{"scheduler.alpha.kubernetes.io/node-selector":"dedicatedNode=NAMESPACE_XXX"}}}'`，例：`kubectl patch namespace demo -p '{"metadata":{"annotations":{"scheduler.alpha.kubernetes.io/node-selector":"dedicatedNode=demo"}}}'`，namespace demo下的pod将会被自动加上nodeSelector `dedicatedNode=demo`
 
-## 参考资料
+## 4. 参考资料
 
 * Using Admission Controllers: https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/
 * Understanding and using the Kubernetes PodNodeSelector Admission Controller: https://www.mgasch.com/post/podnodesel/
