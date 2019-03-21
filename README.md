@@ -40,7 +40,7 @@
 * Service Mesh
   * Istio
 * 扩展Kubernetes
-  * [Admission controller](amazing-features/admission-controller.md)
+  * [Admission controller](extending-kubernetes/admission-controller.md)
   * [Custom resource definition(CRD)](extending-kubernetes/crd.md)
   * [Scheduler extender](extending-kubernetes/scheduler-extender.md)
   * [扩展资源维度](extending-kubernetes/extending-resource.md)
