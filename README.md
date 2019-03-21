@@ -39,10 +39,9 @@
   * Cilium
 * Service Mesh
   * Istio
-* 神奇的Kubernetes特性
-  * [Admission controller](amazing-features/admission-controller.md)
 * 扩展Kubernetes
-  * [CustomResourceDefinition(CRD)](extending-kubernetes/crd.md)
+  * [Admission controller](amazing-features/admission-controller.md)
+  * [Custom resource definition(CRD)](extending-kubernetes/crd.md)
   * [Scheduler extender](extending-kubernetes/scheduler-extender.md)
   * [扩展资源维度](extending-kubernetes/extending-resource.md)
 * 性能调优

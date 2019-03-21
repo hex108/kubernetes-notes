@@ -1,4 +1,4 @@
-# 使用CustomResourceDefinition(CRD)扩展Kubernetes
+# 使用CRD扩展Kubernetes
 
 ## 1. 简介
 
