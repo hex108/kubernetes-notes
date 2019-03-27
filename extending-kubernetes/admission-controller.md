@@ -11,7 +11,7 @@
 
 Diving into Kubernetes MutatingAdmissionWebhook: https://medium.com/ibm-cloud/diving-into-kubernetes-mutatingadmissionwebhook-6ef3c5695f74
 
-可以根据需要自主地（要自己写webhook）修改pod。通过框架[kubewebhook](https://github.com/slok/kubewebhook)可以很方便地写一个webhook。
+可以根据需要自主地（要自己写webhook）修改pod。
 
 ## 3. PodNodeSelector
 
@@ -38,7 +38,25 @@ This admission controller defaults and limits what node selectors may be used wi
 
   `kubectl patch namespace NAMESPACE_XXX -p '{"metadata":{"annotations":{"scheduler.alpha.kubernetes.io/node-selector":"dedicatedNode=NAMESPACE_XXX"}}}'`，例：`kubectl patch namespace demo -p '{"metadata":{"annotations":{"scheduler.alpha.kubernetes.io/node-selector":"dedicatedNode=demo"}}}'`，namespace demo下的pod将会被自动加上nodeSelector `dedicatedNode=demo`
 
-## 4. 参考资料
+## 4. Admission controller编写示例与框架
+
+* 通过框架[kubewebhook](https://github.com/slok/kubewebhook)可以很方便地写一个webhook
+
+  如果要同时支持mutate和validate webhook，写起来还比较麻烦，单独只支持其中一种时很方便。另外，它暂时不支持glog。
+
+* admission-controller-webhook-demo: https://github.com/stackrox/admission-controller-webhook-demo
+
+  这个示例不错。
+
+* example-webhook-admission-controller: [https://github.com/caesarxuchao/example-webhook-admission-controller](https://github.com/caesarxuchao/example-webhook-admission-controller)
+
+* generic-admission-server: https://github.com/openshift/generic-admission-server
+
+* admission-webhook-example: https://github.com/banzaicloud/admission-webhook-example
+
+  通过以上框架的学习，发现自己写一个更方便。
+
+## 5. 参考资料
 
 * Using Admission Controllers: https://kubernetes.io/docs/reference/access-authn-authz/admission-controllers/
 * Understanding and using the Kubernetes PodNodeSelector Admission Controller: https://www.mgasch.com/post/podnodesel/
