@@ -44,6 +44,8 @@
   * [Custom resource definition(CRD)](extending-kubernetes/crd.md)
   * [Scheduler extender](extending-kubernetes/scheduler-extender.md)
   * [扩展资源维度](extending-kubernetes/extending-resource.md)
+  * [Kubectl plugin](extending-kubernetes/kubectl-plugin.md)
+  * Device plugin
 * 性能调优
   * [参数调优](performance-tunning/parameters-tunning.md)
 * 现网问题
