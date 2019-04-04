@@ -18,10 +18,19 @@
 
   https://blog.openshift.com/kubernetes-custom-resources-grow-up-in-v1-10/
 
-  如果想生成UpdateStatus/UpdateScale/..之类的方法，需要在CRD数据结构上加上一些tag：
+  如果要生成status相关的方法，删除CRD数据结构上的下面tag即可：
+
+  ```
+  // +genclient:noStatus
+  ```
+
+  如果要生成`scale`相关的方法，需要在CRD数据结构上加上一些tag：
 
   ```
   Similar to how an UpdateStatus() method exists for the status subresource, we can generate the GetScale() and UpdateScale() methods for the scale subresource by adding the following tags on the Database type.
+  
+  // +genclient:method=GetScale,verb=get,subresource=scale,result=k8s.io/api/autoscaling/v1.Scale
+  // +genclient:method=UpdateScale,verb=update,subresource=scale,input=k8s.io/api/autoscaling/v1.Scale,result=k8s.io/api/autoscaling/v1.Scale
   ```
 
   使用`scale` subresource可以很方便地实现自动扩缩容。
@@ -43,6 +52,10 @@
 
 ## 2. 实现
 
+- CRD registry
+
+  相关的代码在staging/src/k8s.io/apiextensions-apiserver/pkg/registry下。
+
 - ETCD存储
 
   CRD存储在etcd上的路径与deployment、pod等核心资源的存储位置不一样，它的路径为：`root / resource.Group + "/" + resource.Resource`（见`staging/src/k8s.io/apiextensions-apiserver/pkg/apisever/customresource_handler.go`#574，注：在project里搜索“ResourcePrefix”可以搜到其他resource的存储路径）。
@@ -50,6 +63,10 @@
   注： tapp为/registry/gaia/tapps/default/example-tapp。为了平滑升级，兼容以前的版本，我们需要修改tapp的存储路径。
 
 ## 3. 自动化工具
+
+* [operator-sdk](https://github.com/operator-framework/operator-sdk)
+
+  This project is a component of the [Operator Framework](https://github.com/operator-framework), an open source toolkit to manage Kubernetes native applications, called Operators, in an effective, automated, and scalable way.
 
 * [Kubebuilder](https://github.com/kubernetes-sigs/kubebuilder)
 
@@ -61,13 +78,11 @@
 
   Metacontroller is an add-on for Kubernetes that makes it easy to write and deploy [custom controllers](https://kubernetes.io/docs/concepts/api-extension/custom-resources/#custom-controllers) in the form of [simple scripts](https://metacontroller.app/).
 
-* [operator-sdk](https://github.com/operator-framework/operator-sdk)
-
-  This project is a component of the [Operator Framework](https://github.com/operator-framework), an open source toolkit to manage Kubernetes native applications, called Operators, in an effective, automated, and scalable way.
-
 ## 4. 一些有趣的CRD/Operator
 
 Awesome Operators in the Wild: https://github.com/operator-framework/awesome-operators
+
+Operator hub: [https://operatorhub.io](https://operatorhub.io)
 
 
 ## 5. 参考资料
