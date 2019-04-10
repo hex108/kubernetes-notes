@@ -9,3 +9,5 @@
 ## 参考资料
 
 * Garbage collection: https://github.com/kubernetes/community/blob/master/contributors/design-proposals/api-machinery/garbage-collection.md
+* Finalizers: https://kubernetes.io/docs/tasks/access-kubernetes-api/custom-resources/custom-resource-definitions/#finalizers
+* Places for hooks: https://github.com/kubernetes/kubernetes/issues/3585
