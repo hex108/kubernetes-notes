@@ -45,9 +45,9 @@
 
   * 利用工具自动生成OpenAPI schema
 
-    https://github.com/ant31/crd-validation
+    [https://github.com/kubernetes-sigs/controller-tools/tree/master/cmd/crd](https://github.com/kubernetes-sigs/controller-tools/tree/master/cmd/crd)
 
-    官方也有相应的issue追踪[CRD validation umbrella issue](https://github.com/kubernetes/kubernetes/issues/62323)，[add support for openapiv3 json output format](https://github.com/kubernetes/kube-openapi/pull/37)，但还没没完成。
+    https://github.com/ant31/crd-validation
 
 
 ## 2. 实现
