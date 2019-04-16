@@ -59,3 +59,4 @@
 * 附录：RTFSC
 
   * [Informer](RTFSC/informer.md)
+  * [Pod deletion](RTFSC/pod-deletion.md)
