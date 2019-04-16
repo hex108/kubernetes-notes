@@ -56,4 +56,6 @@
 * [各大公司生产环境实践](usecases-in-production.md)
 * [社区贡献](how-to-contribute.md)
 * [学习资料](learning-materials.md)
+* 附录：RTFSC
 
+  * [Informer](RTFSC/informer.md)
