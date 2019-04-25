@@ -68,6 +68,8 @@
 
   This project is a component of the [Operator Framework](https://github.com/operator-framework), an open source toolkit to manage Kubernetes native applications, called Operators, in an effective, automated, and scalable way.
 
+  使用operator-sdk时可参考[operator-sdk get started](https://github.com/operator-framework/getting-started)。
+
 * [Kubebuilder](https://github.com/kubernetes-sigs/kubebuilder)
 
   Kubebuilder is a framework for building Kubernetes APIs using [custom resource definitions (CRDs)](https://kubernetes.io/docs/tasks/access-kubernetes-api/extend-api-custom-resource-definitions).
