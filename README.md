@@ -10,6 +10,7 @@
     * [理解证书](basic-concepts/authentication-authorization/certificate.md)
     * [Kubelet配置](basic-concepts/authentication-authorization/kubelet.md)
   * [垃圾回收](basic-concepts/garbage-collection.md)
+  * [Service](basic-concepts/service.md)
 * 基础组件
   * [Scheduler](basic-components/scheduler.md)
 * 容器运行时(Container Runtime)
