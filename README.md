@@ -55,8 +55,10 @@
   * [Kubernetes](bugs-in-production/kubernetes.md)
   * [ETCD](bugs-in-production/etcd.md)
   * [Docker](bugs-in-production/docker.md)
-* [各组件推荐参数配置](components_configure.md)
-* [各大公司生产环境实践](usecases-in-production.md)
+* 最佳实践
+  * [各组件推荐参数配置](best-practice/components_configure.md)
+  * [各大公司生产环境实践](best-practice/usecases-in-production.md)
+  * [如何打造一个Kubernetes平台](best-practice/how-to-build-a-kubernetes-platform.md)
 * [社区贡献](how-to-contribute.md)
 * [学习资料](learning-materials.md)
 * 附录：RTFSC
