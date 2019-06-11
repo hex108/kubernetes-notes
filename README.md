@@ -27,6 +27,7 @@
   - [Memory](resource-isolation/memory.md)
   - 网络出/入带宽
   - [Container](resource-isolation/container.md)
+  - [FAQ](resource-isolation/faq.md)
 * 网络
   * 基础知识
     * [Linux network interfaces](network/linux-network-interfaces.md)
