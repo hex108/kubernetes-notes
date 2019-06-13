@@ -1,8 +1,14 @@
 # 各公司生产环境实践
 
+## Kubernetes Failure Stories
+
+https://github.com/hjacobs/kubernetes-failure-stories
+
 ## 腾讯
 
 腾讯Docker云平台GaiaStack：https://zhuanlan.zhihu.com/p/32022739
+
+TKE指南：https://tencentcloudcontainerteam.github.io/tke-handbook/
 
 ## 京东
 

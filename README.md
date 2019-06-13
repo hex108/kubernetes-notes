@@ -13,6 +13,7 @@
   * [Service](basic-concepts/service.md)
 * 基础组件
   * [Scheduler](basic-components/scheduler.md)
+  * [自动扩缩容(HPA)](basic-components/hpa.md)
 * 容器运行时(Container Runtime)
   * [CRI](container-runtime/cri.md)
   * Docker
