@@ -29,3 +29,5 @@ b. make
 ```
 make test-integration WHAT=./test/integration/scheduler_perf GOFLAGS="-v=1" KUBE_TEST_VMODULE="''" KUBE_TEST_ARGS="-run=xxx -bench=BenchmarkScheduling"
 ```
+
+c. [Scheduler Benchmarking](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-scheduling/scheduler_benchmarking.md)

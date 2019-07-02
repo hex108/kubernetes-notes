@@ -90,8 +90,7 @@ Operator hub: [https://operatorhub.io](https://operatorhub.io)
 ## 5. 参考资料
 
 * Extend the Kubernetes API with CustomResourceDefinitions: https://kubernetes.io/docs/tasks/access-kubernetes-api/custom-resources/custom-resource-definitions/
-
 * Building an operator for Kubernetes with the sample-controller: https://itnext.io/building-an-operator-for-kubernetes-with-the-sample-controller-b4204be9ad56
-
 * Building an operator for Kubernetes with kubebuilder: https://itnext.io/building-an-operator-for-kubernetes-with-kubebuilder-17cbd3f07761
 * Building an operator for Kubernetes with operator-sdk: https://itnext.io/building-an-operator-for-kubernetes-with-operator-sdk-40a029ea056
+* Kubernetes Operators Best Practices: https://blog.openshift.com/kubernetes-operators-best-practices/
