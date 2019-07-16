@@ -31,3 +31,14 @@ make test-integration WHAT=./test/integration/scheduler_perf GOFLAGS="-v=1" KUBE
 ```
 
 c. [Scheduler Benchmarking](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-scheduling/scheduler_benchmarking.md)
+
+## 4. 其他调度器
+
+* [Nomad](https://github.com/hashicorp/nomad)
+
+  调度原理：[Scheduling in Nomad](https://www.nomadproject.io/docs/internals/scheduling/scheduling.html)
+
+## 5. 公开的调度数据
+
+* Google: https://github.com/google/cluster-data
+* Alibaba: https://github.com/alibaba/clusterdata/
