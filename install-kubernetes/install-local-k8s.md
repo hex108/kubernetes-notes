@@ -20,7 +20,7 @@
 
 ## 3. 运行集成测试
 
-https://github.com/kubernetes/community/blob/master/contributors/devel/testing.md#integration-tests
+https://github.com/kubernetes/community/blob/master/contributors/devel/sig-testing/integration-tests.md
 
 - The following invocation will run all integration tests: `make test-integration`
 - The following invocation will run a specific test with the verbose flag set:`make test-integration WHAT=./test/integration/pods GOFLAGS="-v" KUBE_TEST_ARGS="-run ^TestPodUpdateActiveDeadlineSeconds$"`, e.g. `make test-integration WHAT=./staging/src/k8s.io/apiextensions-apiserver/test/integration/ GOFLAGS="-v" KUBE_TEST_ARGS="-run TestEtcdStorage"`
