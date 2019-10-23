@@ -41,13 +41,9 @@
 ## 参考资料
 
 * Cgroup(from Linux Programmer's Manual): http://man7.org/linux/man-pages/man7/cgroups.7.html
-
 * https://www.kernel.org/doc/Documentation/cgroup-v1/
 * https://www.kernel.org/doc/Documentation/cgroup-v2.txt
-
 * RedHat RESOURCE MANAGEMENT GUIDE: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/resource_management_guide/
-
 * https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/resource_management_guide/
-
 * Understanding the new control groups API: https://lwn.net/Articles/679786/
 

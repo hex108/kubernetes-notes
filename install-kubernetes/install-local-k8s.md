@@ -8,9 +8,9 @@
 
 编译某个组件：
 
-`make ALL WHAT=$(COMPNAME_NAME)`
+`make all WHAT=$(COMPNAME_NAME)`
 
-例：编译kubelet：`make ALL WHAT=cmd/kubelet`
+例：编译kubelet：`make all WHAT=cmd/kubelet`
 
 ## 2. 本地节点运行kubernetes集群
 
