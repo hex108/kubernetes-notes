@@ -11,7 +11,11 @@
 * 如果headless service指定了selector时，k8s不会为它分配cluster ip，但endpoint controller会为该service创建selector对应的pod的ip的endpoints。这些endpoints会被DNS（根据[Kubernetes DNS-Based Service Discovery](https://github.com/kubernetes/dns/blob/master/docs/specification.md)）用于创建A record，这样通过nslookup这个service时，可以查到对应的pod列表，并且，通过`podName.serviceName`可以访问到对应的pod ip。创建`statefulset`对象前就要创建这样一个headless service，用于pod间通信。
 * 如果headless service没有指定selector，k8s不会为它分配cluster ip，endpoint controller也不会为它创建endpoint，但DNS会创建相应的CNAME records for [`ExternalName`](https://kubernetes.io/docs/concepts/services-networking/service/#externalname)-type services或A records for any Endpoints that share a name with the service, for all other types.
 
-## 2. 参考资料
+## 2.  NodePort vs LoadBalancer vs Ingress
+
+https://medium.com/google-cloud/kubernetes-nodeport-vs-loadbalancer-vs-ingress-when-should-i-use-what-922f010849e0
+
+## 3. 参考资料
 
 * Headless service: [https://kubernetes.io/docs/concepts/services-networking/service/#headless-services](https://kubernetes.io/docs/concepts/services-networking/service/#headless-services)
 * Proposal: Headless service: [https://github.com/kubernetes/kubernetes/issues/1607](https://github.com/kubernetes/kubernetes/issues/1607)

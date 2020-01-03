@@ -17,3 +17,5 @@ Kubernetes的生态异常繁荣，其landscape见https://landscape.cncf.io/。�
 ## 镜像仓库
 
 使用[harbor](https://github.com/goharbor/harbor)搭建镜像仓库。如果需要使用p2p传输镜像，可以考虑[Dragonfly](https://github.com/dragonflyoss/Dragonfly)或[kraken](https://github.com/uber/kraken)。kraken自身就包含了镜像仓库的功能，不能和harbor等搭配使用。
+
+P2P的具体实现原理可参考论文[FID: A Faster Image Distribution System for Docker Platform](https://ieeexplore.ieee.org/document/8064123/)。
