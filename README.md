@@ -1,5 +1,6 @@
 # [Kubernetes Notes](https://hex108.gitbook.io/kubernetes-notes/)
 
+* [序：Kubernetes之道](./tao-of-k8s.md)
 * 搭建开发环境
   * [搭建本地开发测试环境](install-kubernetes/install-local-k8s.md)
   * 搭建多机开发测试环境
