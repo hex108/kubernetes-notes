@@ -3,7 +3,6 @@
 * [序：Kubernetes之道](./tao-of-k8s.md)
 * 搭建开发环境
   * [搭建本地开发测试环境](install-kubernetes/install-local-k8s.md)
-  * 搭建多机开发测试环境
 * 基本概念
   * Workloads
     * [StatefulSet](basic-concepts/workloads/statefulset.md)
@@ -53,14 +52,12 @@
   * [Kubectl plugin](extending-kubernetes/kubectl-plugin.md)
   * [Aggregator](extending-kubernetes/aggregator.md)
   * Device plugin
-* 性能调优
-  * [参数调优](performance-tunning/parameters-tunning.md)
 * 现网问题
   * [Kubernetes](bugs-in-production/kubernetes.md)
   * [ETCD](bugs-in-production/etcd.md)
   * [Docker](bugs-in-production/docker.md)
 * 最佳实践
-  * [各组件推荐参数配置](best-practice/components_configure.md)
+  * [各组件参数配置调优](best-practice/components_configure.md)
   * [各大公司生产环境实践](best-practice/usecases-in-production.md)
   * [如何打造一个Kubernetes平台](best-practice/how-to-build-a-kubernetes-platform.md)
 * [社区贡献](how-to-contribute.md)
