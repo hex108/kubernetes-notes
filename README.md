@@ -60,6 +60,8 @@
   * [各组件参数配置调优](best-practice/components_configure.md)
   * [各大公司生产环境实践](best-practice/usecases-in-production.md)
   * [如何打造一个Kubernetes平台](best-practice/how-to-build-a-kubernetes-platform.md)
+* 生产力小工具
+  * [生成特定权限和配额的kubeconfig](tools/generate-kubeconfig.md)
 * [社区贡献](how-to-contribute.md)
 * [学习资料](learning-materials.md)
 * 附录：RTFSC
