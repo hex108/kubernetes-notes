@@ -1,6 +1,6 @@
 # Cgroup
 
-## 基本操作
+## 1. 基本操作
 
 * Mount cgroup
 
@@ -14,6 +14,18 @@
   mount -t cgroup -o blkio cgroup /sys/fs/cgroup/blkio
   mount -t cgroup -o cpu,cpuacct cgroup /sys/fs/cgroup/cpu,cpuacct
   ```
+
+  注：
+
+  * Cgroup v1 named hierarchies
+
+    > mount -t cgroup -o none,name=somename none /some/mount/point
+    >
+    > Multiple instances of such hierarchies can be mounted; each hierarchy must have a unique name.  The only purpose of such hierarchies is to track processes.  (See the discussion of release notification below.) An example of this is the name=systemd cgroup hierarchy that is used by systemd(1) to track services and user sessions.
+
+  * mount -t cgroup -o cpuset none /cpuset 中 none的作用
+
+    > Certain filesystems aren't associated with a physical `device` (such as a partition or network share, which is what is expected at that point in the `mount` command) and it is/was customary to use `none` for these.
 
 * 向task中增加pid
 
@@ -46,4 +58,4 @@
 * RedHat RESOURCE MANAGEMENT GUIDE: https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/resource_management_guide/
 * https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/resource_management_guide/
 * Understanding the new control groups API: https://lwn.net/Articles/679786/
-
+* What does 'none' mean in “mount -t cgroup -o cpuset none /cpuset”: https://stackoverflow.com/questions/29674879/what-does-none-mean-in-mount-t-cgroup-o-cpuset-none-cpuset

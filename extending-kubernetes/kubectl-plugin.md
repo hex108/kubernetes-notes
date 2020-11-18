@@ -11,3 +11,4 @@ kubectl view-secret               # use the plugin
 kubectl krew upgrade              # upgrade installed plugins
 kubectl krew remove view-secret   # uninstall a plugin
 ```
+

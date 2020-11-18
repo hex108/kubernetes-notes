@@ -27,6 +27,7 @@
   - [CPU](resource-isolation/cpu.md)
   - [Memory](resource-isolation/memory.md)
   - 网络出/入带宽
+  - [GPU](resource-isolation/gpu.md)
   - [Container](resource-isolation/container.md)
   - [FAQ](resource-isolation/faq.md)
 * 网络
