@@ -8,13 +8,17 @@
 
 ## Kubernetes
 
+入门与深入系列：
+
 - awesome-kubernetes: https://github.com/ramitsurana/awesome-kubernetes
-- https://kubernetes.feisky.xyz/
-- https://jimmysong.io/kubernetes-handbook/
 - Kubernetes The Hard Way: https://github.com/kelseyhightower/kubernetes-the-hard-way
 
-  文章
+- Kubernetes指南： https://kubernetes.feisky.xyz/
+- Kubernetes 中文指南：https://jimmysong.io/kubernetes-handbook/
 
+精彩文章：
+
+* Borg, Omega, and Kubernetes: https://queue.acm.org/detail.cfm?id=2898444
 * [Scalability good practices for Kubernetes contributors](https://docs.google.com/document/d/190lWs3SeU4lCnNtscErlCtFgISNlbvDlu5OeISOLKo0/edit?ts=592c1efe#heading=h.ie92xnlbptq2)
 
 ## 网络
