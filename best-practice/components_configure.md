@@ -2,7 +2,7 @@
 
 **对于生产环境，组件参数的配置很重要，以下参数对于大集群性能优化也会有很大帮助。**
 
-## 1. Apiserver参数
+## 1. API Server参数
 
 * 设置单独的etcd集群存储event事件
 
@@ -20,6 +20,8 @@
 * –target-ram-mb
 
   内存配置选项和node数量的关系，单位是MB：--target-ram-mb=node_nums * 60
+
+* 给API Server配置足够的资源，主要是CPU、内存资源
 
 ## 2. Controller参数
 
@@ -111,3 +113,4 @@ kubelet各参数解释：https://kubernetes.io/docs/reference/command-line-tools
 * Kubernetes Scalability thresholds: https://github.com/kubernetes/community/blob/master/sig-scalability/configs-and-limits/thresholds.md
 * Scalability Testing/Analysis Environment and Goals: https://github.com/kubernetes/community/blob/master/sig-scalability/configs-and-limits/provider-configs.md
 * ETCD tunning: https://etcd.io/docs/v3.4.0/tuning/
+* 一年时间打造全球最大规模之一的Kubernetes集群，蚂蚁金服怎么做到的？https://mp.weixin.qq.com/s/bJrMNxKMn89TzmpEyIZrRg
