@@ -6,5 +6,6 @@ CRI定义了pod、image相关的一系列[接口](https://github.com/kubernetes/
 
 ## 参考资料
 
+- The differences between Docker, containerd, CRI-O and runc: https://www.tutorialworks.com/difference-docker-containerd-runc-crio-oci/
 - Who Is Running My Kubernetes Pod? The Past, Present, and Future of Container Runtimes: https://www.infoq.com/articles/container-runtimes-kubernetes
 - Kubernetes 容器运行时演进: https://feisky.xyz/posts/kubernetes-container-runtime/
