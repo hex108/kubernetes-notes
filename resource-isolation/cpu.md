@@ -89,6 +89,14 @@ sh
 cat /proc/self/cpuset
 ```
 
+### 2.3 cpu quota VS cpuset
+
+对于延时敏感的应用，用cpuset可能更合适，参考[Avoiding CPU Throttling in a Containerized Environment](https://www.uber.com/en-SG/blog/avoiding-cpu-throttling-in-a-containerized-environment/)。
+
+```
+Unfortunately, this approach turns out to be problematic due to multi-processing/threading inside the container. This makes the container use up the quota too quickly, causing it to get throttled for the rest of the period.
+```
+
 ## 3. Kubelet中的cpu管理
 
 Cpu manager: https://kubernetes.io/blog/2018/07/24/feature-highlight-cpu-manager/
