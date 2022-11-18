@@ -30,3 +30,4 @@ StatefulSet目前有一个问题，如果它管理的pod所在的kubelet节点�
 
 * Force Delete StatefulSet Pods: https://kubernetes.io/docs/tasks/run-application/force-delete-stateful-set-pod/
 * Nodes: https://kubernetes.io/docs/concepts/architecture/nodes/
+* How to Delete Pods from a Kubernetes Node with Examples: https://spacelift.io/blog/kubectl-delete-pod
