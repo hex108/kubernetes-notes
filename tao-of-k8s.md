@@ -9,3 +9,7 @@ The Mechanics of Kubernetes: https://medium.com/@dominik.tornow/the-mechanics-of
 Events, the DNA of Kubernetes: https://www.mgasch.com/post/k8sevents/
 
 Level Triggering and Reconciliation in Kubernetes: https://hackernoon.com/level-triggering-and-reconciliation-in-kubernetes-1f17fe30333d
+
+## 2. 基本概念
+
+The History of Pets vs Cattle and How to Use the Analogy Properly: http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/
